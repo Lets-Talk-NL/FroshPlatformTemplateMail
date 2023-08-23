@@ -33,7 +33,7 @@ class MjmlLoader implements LoaderInterface
         $mjmlTemplate = $this->parseIncludes($fileContent, \dirname($path));
 
         try {
-            $response = $this->client->post('https://mjml.shyim.de', [
+            $response = $this->client->post('https://mjml.ops.letstalk.nl', [
                 'json' => [
                     'mjml' => $mjmlTemplate,
                 ],
